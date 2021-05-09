@@ -1,7 +1,6 @@
 package Tests;
 
 import capoeira1.Lid;
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,6 +12,7 @@ class LidTest {
     @Test
     public void TestGetNaam() {
         Assertions.assertEquals("jan", lid1.getNaam());
+
     }
 
     @Test
