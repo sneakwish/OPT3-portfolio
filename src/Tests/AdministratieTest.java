@@ -1,6 +1,6 @@
-package com.company;
+package Tests;
 
-import org.junit.Assert;
+import capoeira1.Administratie;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -13,6 +13,4 @@ class AdministratieTest {
         assertEquals("hoi", yo.hoi());
     }
 
-    @Test
-    void
 }

@@ -1,9 +1,9 @@
-package com.company;
+package capoeira1;
 
 import java.util.ArrayList;
 
 public class Administratie {
-    private ArrayList<Leden> ledenLijst = new ArrayList<Leden>();
+    private ArrayList<Lid> lidLijst = new ArrayList<Lid>();
 
 
     public String hoi() {

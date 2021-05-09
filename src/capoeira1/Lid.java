@@ -1,12 +1,12 @@
-package com.company;
+package capoeira1;
 
-public class Leden {
+public class Lid {
     private String naam;
     private int leeftijd;
     private String adres;
     private String postcode;
 
-    public Leden(String naam, int leeftijd, String adres, String postcode) {
+    public Lid(String naam, int leeftijd, String adres, String postcode) {
         this.naam = naam;
         this.leeftijd = leeftijd;
         this.adres = adres;
