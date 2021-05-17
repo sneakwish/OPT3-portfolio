@@ -4,13 +4,17 @@ public class Lid {
     private String naam;
     private int leeftijd;
     private String adres;
-    private String postcode;
+    private int telefoon;
+    private Boolean isLid;
+    private String email;
 
-    public Lid(String naam, int leeftijd, String adres, String postcode) {
+    public Lid(String naam, int leeftijd, String adres, int telefoon, Boolean isLid, String email) {
         this.naam = naam;
         this.leeftijd = leeftijd;
         this.adres = adres;
-        this.postcode = postcode;
+        this.telefoon = telefoon;
+        this.isLid = isLid;
+        this.email = email;
     }
 
     public String getNaam() {
@@ -37,11 +41,27 @@ public class Lid {
         this.adres = adres;
     }
 
-    public String getPostcode() {
-        return postcode;
+    public int getTelefoon() {
+        return telefoon;
     }
 
-    public void setPostcode(String postcode) {
-        this.postcode = postcode;
+    public void setTelefoon(int telefoon) {
+        this.telefoon = telefoon;
+    }
+
+    public Boolean getIsLid() {
+        return isLid;
+    }
+
+    public void setIsLid(Boolean lid) {
+        isLid = lid;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

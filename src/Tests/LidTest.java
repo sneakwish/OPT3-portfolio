@@ -7,7 +7,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class LidTest {
-    Lid lid1 = new Lid("jan", 18, "Beverstraat 9", "1996TG");
+    static Lid lid1;
+
+    @BeforeEach
+    public static void maakLid(){
+        lid1 = new Lid("jan", 18, "Verstraat 9", 063723325, true, "jan@gmail.com");
+    }
 
     @Test
     public void TestGetNaam() {
@@ -25,8 +30,4 @@ class LidTest {
         Assertions.assertEquals("Beverstraat 9", lid1.getAdres());
     }
 
-    @Test
-    void getPostcode() {
-        Assertions.assertEquals("1996TG", lid1.getPostcode());
-    }
 }
