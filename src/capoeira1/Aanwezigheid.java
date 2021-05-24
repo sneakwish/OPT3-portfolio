@@ -6,6 +6,7 @@ public class Aanwezigheid {
     private ArrayList<Lid> lidLijst = new ArrayList<Lid>();
 //    private int getraind;
     private Boolean betaald;
+    private static int aanwezigen = 0;
 
     public int kosten(int getraind){
         if(getraind==1){
@@ -21,6 +22,25 @@ public class Aanwezigheid {
             return 0;
         }
         return 0;
+    }
+
+    public String toelating(Boolean mondkapje, Boolean gezond, int leeftijd){
+        if (!mondkapje){
+            return "Niet toegelaten!";
+        }
+        if(!gezond){
+            return "Niet toegelaten!";
+        }
+
+        if (aanwezigen<20){
+            if(leeftijd<18){
+                return "Toegelaten!";
+                aanwezigen++;
+            }
+        }
+
+
+
     }
 
     public ArrayList<Lid> getLidLijst() {
