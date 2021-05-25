@@ -8,6 +8,7 @@ public class Aanwezigheid {
     private Boolean betaald;
     private static int aanwezigen = 0;
 
+
     public int kosten(int getraind){
         if(getraind==1){
             System.out.println("1x in een week getraind. Kosten eind van de maand is: €25,-");
@@ -24,23 +25,36 @@ public class Aanwezigheid {
         return 0;
     }
 
-    public String toelating(Boolean mondkapje, Boolean gezond, int leeftijd){
+    public Boolean toelating(Boolean mondkapje, Boolean gezond, int leeftijd){
         if (!mondkapje){
-            return "Niet toegelaten!";
+            System.out.println("Niet toegelaten! Neem een mondkapje mee.");
+            return false;
         }
         if(!gezond){
-            return "Niet toegelaten!";
+            System.out.println("Niet toegelaten! Blijf thuis.");
+            return false;
         }
-
         if (aanwezigen<20){
             if(leeftijd<18){
-                return "Toegelaten!";
+                System.out.println("Toegelaten! Je hoeft geen afstand te houden.");
                 aanwezigen++;
+                return true;
+            }
+            else if(leeftijd>=60){
+                System.out.println("Je bent te oud!");
+                aanwezigen++;
+                return false;
+            }
+            else{
+                System.out.println("Toegelaten! Je Moet afstand houden.");
+                aanwezigen++;
+                return true;
             }
         }
-
-
-
+        else{
+            System.out.println("Niet toegelaten! We zijn al met max. 20 man.");
+            return false;
+        }
     }
 
     public ArrayList<Lid> getLidLijst() {
@@ -67,4 +81,7 @@ public class Aanwezigheid {
         this.betaald = betaald;
     }
 
+    public void setAanwezigen(int aanwezigen) {
+        this.aanwezigen = aanwezigen;
+    }
 }
