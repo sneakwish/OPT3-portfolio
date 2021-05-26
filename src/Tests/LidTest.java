@@ -10,8 +10,8 @@ class LidTest {
     static Lid lid1;
 
     @BeforeEach
-    public static void maakLid(){
-        lid1 = new Lid("jan", 18, "Verstraat 9", 063723325, true, "jan@gmail.com");
+    public void maakLid(){
+        lid1 = new Lid("jan", 18, "Beverstraat 9", 063723325, true, "jan@gmail.com");
     }
 
     @Test
