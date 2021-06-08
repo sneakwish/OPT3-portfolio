@@ -1,5 +1,7 @@
 package capoeira1;
 
+import java.util.ArrayList;
+
 public class Lid {
     private String naam;
     private int leeftijd;
@@ -7,6 +9,8 @@ public class Lid {
     private int telefoon;
     private Boolean isLid;
     private String email;
+    private ArrayList<Training> trainingen = new ArrayList<Training>();
+    private ArrayList<Betalingen> betalingen = new ArrayList<Betalingen>();
 
     public Lid(String naam, int leeftijd, String adres, int telefoon, Boolean isLid, String email) {
         this.naam = naam;
@@ -63,5 +67,21 @@ public class Lid {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public ArrayList<Training> getTrainingen() {
+        return trainingen;
+    }
+
+    public void setTrainingen(ArrayList<Training> trainingen) {
+        this.trainingen = trainingen;
+    }
+
+    public ArrayList<Betalingen> getBetalingen() {
+        return betalingen;
+    }
+
+    public void setBetalingen(ArrayList<Betalingen> betalingen) {
+        this.betalingen = betalingen;
     }
 }
