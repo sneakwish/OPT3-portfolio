@@ -1,4 +1,4 @@
-package capoeira1;
+package model;
 
 import java.util.ArrayList;
 
@@ -9,6 +9,41 @@ public class Lid {
     private int telefoon;
     private Boolean isLid;
     private String email;
+    private String getraind;
+
+    @Override
+    public String toString() {
+        return "Lid{" +
+                "naam='" + naam + '\'' +
+                ", leeftijd=" + leeftijd +
+                ", adres='" + adres + '\'' +
+                ", telefoon=" + telefoon +
+                ", isLid=" + isLid +
+                ", email='" + email + '\'' +
+                ", getraind='" + getraind + '\'' +
+                ", betaald='" + betaald + '\'' +
+                ", trainingen=" + trainingen +
+                ", betalingen=" + betalingen +
+                '}';
+    }
+
+    public String getGetraind() {
+        return getraind;
+    }
+
+    public void setGetraind(String getraind) {
+        this.getraind = getraind;
+    }
+
+    public String getBetaald() {
+        return betaald;
+    }
+
+    public void setBetaald(String betaald) {
+        this.betaald = betaald;
+    }
+
+    private String betaald;
     private ArrayList<Training> trainingen = new ArrayList<Training>();
     private ArrayList<Betalingen> betalingen = new ArrayList<Betalingen>();
 

@@ -1,8 +1,7 @@
 package Tests;
 
-import capoeira1.Lid;
+import model.Lid;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

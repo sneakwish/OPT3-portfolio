@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/OPT3 capoeira.iml" filepath="$PROJECT_DIR$/OPT3 capoeira.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxml-navigatie.iml" filepath="$PROJECT_DIR$/fxml-navigatie.iml" />
     </modules>
   </component>
 </project>

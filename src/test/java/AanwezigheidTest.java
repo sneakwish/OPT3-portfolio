@@ -1,12 +1,10 @@
 package Tests;
 
-import capoeira1.Aanwezigheid;
-import capoeira1.Lid;
+import model.Aanwezigheid;
+import model.Lid;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class AanwezigheidTest {
 

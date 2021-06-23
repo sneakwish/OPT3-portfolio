@@ -1,13 +1,10 @@
 package Tests;
 
-import capoeira1.Administratie;
-import capoeira1.Lid;
+import model.Administratie;
+import model.Lid;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class AdministratieTest {
     static Lid lid1;
